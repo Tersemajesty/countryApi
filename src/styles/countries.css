@@ -1,0 +1,78 @@
+.countriesWrapper{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: orange; */
+}
+
+.countriesWrapperHeader{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: rgb(226, 110, 43); */
+}
+
+.countriesCardWrapper{
+    width: 90%;
+    height: max-content;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.searchWrapper{
+    width: 30%;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.searchWrapper input{
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline: 0;
+    font-size: 18px;
+}
+
+.dropDown{
+    width: 10%;
+    height: 35px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 5px;
+    outline: 0;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+
+.countriesWrapperDark{
+    background: #1F2D36;
+}
+
+.countriesCardWrapperDark{
+    background: #1F2D36;
+    
+    & dropDown{
+        background: #1F2D36;
+        color: black;
+    }
+}
+
