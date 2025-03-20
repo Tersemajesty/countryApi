@@ -22,3 +22,14 @@
     background: #2B3945;
     color: white;
 }
+
+@media only screen and (max-width: 500px) {
+    .countryCardWrapper {
+        width: 80%; 
+        padding: 15px; 
+    }
+
+    .countryCardWrapper img {
+        width: 90%; 
+    }
+}

@@ -20,7 +20,7 @@ import Header from './components/header/Header'
   return (
    <>
     {
-    loadState? <div style={{width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', backdropFilter: "blur(10px)"}}>Loading...</div> : <div>
+    loadState? <div style={{width: '100%', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'white', backdropFilter: "blur(10px)"}}><span class="loader"></span></div> : <div>
       <Header handleModeSwitch = {handleModeSwitch} modeSwitch = {modeSwitch}/>
       <Countries handleModeSwitch = {handleModeSwitch} modeSwitch = {modeSwitch} loadState={setLoadState}/>
     </div>

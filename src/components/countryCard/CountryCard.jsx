@@ -1,32 +1,16 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import './countryCard.css'
-import axios from 'axios';
+// import axios from 'axios';
 
-const CountryCard = ({ modeSwitch, loadState }) => {
-
-  const url = 'https://restcountries.com/v3.1/all';
-  const [countriesData, setCountriesData] = useState([]);
-  console.log(countriesData)
+const CountryCard = ({ modeSwitch, filteredData }) => {
 
 
-  useEffect(() => {
-    
-  const fetchApi = async () => {
-    try {
-      loadState(true)
-      const ress = await axios.get(url);
-      setCountriesData(ress.data)
-      console.log(ress);
-    } catch (err) {
-      console.log(err);
-      loadState(false)
-    }
-  }
-    fetchApi()
-  }, [loadState])
   return <>
-    {
-      countriesData.map((Datas, index) => (
+   {
+    filteredData.length === 0 ? <h3>Country not found</h3> : 
+    <>
+     {
+      filteredData.map((Datas, index) => (
         <div className={`countryCardWrapper ${modeSwitch ? "countryCardWrapperDark" : ""}`} key={index}>
           <img src={Datas.flags?.png} alt={Datas.name?.common} />
           <h2>{Datas.name?.common}</h2> {/* Country Name */}
@@ -36,6 +20,8 @@ const CountryCard = ({ modeSwitch, loadState }) => {
         </div>
       ))
     }
+    </>
+   }
   </>
 }
 
