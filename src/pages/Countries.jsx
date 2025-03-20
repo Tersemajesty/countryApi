@@ -57,7 +57,7 @@ const Countries = ({ handleModeSwitch, modeSwitch, loadState }) => {
                         value={searchValue} 
                         onChange={(e) => setSearchValue(e.target.value)} 
                     />
-                </div>
+                </div>  
                 
                 <div className="dropDown">
                     <select onChange={(e) => setSelectedRegion(e.target.value)} value={selectedRegion}>
