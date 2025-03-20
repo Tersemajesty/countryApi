@@ -53,12 +53,27 @@
     border: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 5px;
     padding: 5px;
     outline: 0;
-    background: white;
+    /* background: red; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    & select {
+        /* background: blue; */
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    & option {
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+    }
 }
 
 
@@ -82,11 +97,8 @@
 @media only screen and (max-width: 500px) {
 
     .countriesWrapper {
-        /* height: auto; */
-        /* padding: 10px; */
         width: 100%;
         overflow-x: hidden;
-        /* background: #000; */
     }
     .countriesWrapperHeader {
         flex-direction: column;
