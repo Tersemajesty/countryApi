@@ -60,29 +60,29 @@
 
 @media only screen and (max-width: 500px) {
     .headerWrapper {
-        height: 60px; /* Slightly reduced height for mobile */
-        padding: 0 10px; /* Adjusted padding */
+        height: 60px; 
+        padding: 10px; 
     }
 
     .headerWrapperunder {
-        height: 60px; /* Ensure consistency */
+        height: 60px; 
     }
 
     .headerContent {
-        width: 95%; /* Use more screen space */
-        padding: 0 10px; /* Less padding for mobile */
+        width: 90%; 
+        padding: 0 10px; 
     }
 
     .headerText {
-        font-size: 20px; /* Reduced font size for better fit */
+        font-size: 20px; 
     }
 
     .darkModeWrapper {
-        padding: 5px; /* Less padding for a compact look */
+        padding: 5px; 
     }
 
     .darkModeWrapper p {
-        font-size: 14px; /* Smaller font for better scaling */
+        font-size: 14px;  
     }
 }
 
