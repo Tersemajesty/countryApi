@@ -1,6 +1,4 @@
-// import { useEffect, useState } from 'react';
 import './countryCard.css'
-// import axios from 'axios';
 
 const CountryCard = ({ modeSwitch, filteredData }) => {
 
